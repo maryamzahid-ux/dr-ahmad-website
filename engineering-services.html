@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al Khabbaz Consulting Engineers (KCE) | Engineering Excellence</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      .services-hero {
+        background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=1200') center/cover;
+        padding: 140px 0 100px;
+        color: white;
+      }
+      .capabilities-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        padding: 100px 0;
+      }
+      .capability-item {
+        display: flex;
+        gap: 32px;
+      }
+      .cap-icon {
+        width: 64px;
+        height: 64px;
+        background: var(--surface);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent);
+        flex-shrink: 0;
+      }
+      .cap-content h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+        color: var(--primary);
+      }
+      .cap-content p {
+        color: var(--text-muted);
+        line-height: 1.7;
+        font-size: 15px;
+      }
+      .expertise-section {
+        background-color: var(--primary);
+        color: var(--white);
+        padding: 100px 0;
+      }
+      .expertise-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+        margin-top: 60px;
+      }
+      .expertise-card {
+        background: rgba(255,255,255,0.05);
+        padding: 40px;
+        border-radius: 4px;
+        border-bottom: 3px solid var(--accent);
+        text-align: center;
+        transition: var(--transition);
+      }
+      .expertise-card:hover {
+        background: rgba(255,255,255,0.1);
+        transform: translateY(-5px);
+      }
+      .expertise-card i {
+        color: var(--accent);
+        margin-bottom: 20px;
+        display: block;
+      }
+      .expertise-card h4 {
+        color: white;
+        font-size: 18px;
+      }
+      .back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 40px;
+        color: var(--accent);
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav-container">
+          <a href="/" class="logo">
+            <div class="logo-icon-svg">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 10L90 30V50L50 30V10Z" fill="#2563EB"/>
+                <path d="M90 50V70L50 90V70L90 50Z" fill="#F59E0B"/>
+                <path d="M50 90L10 70V30L50 50V90Z" fill="#14B8A6"/>
+                <path d="M50 30L90 50L50 70L10 50L50 30Z" fill="#0F172A" fill-opacity="0.2"/>
+                <path d="M50 10L90 30V70L50 90L10 70V30L50 10Z" stroke="#0F172A" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <h3>AL KHABBAZ</h3>
+              <span>Corporate Enterprise</span>
+            </div>
+          </a>
+          <nav class="nav-links">
+            <a href="/#home">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#divisions">Divisions</a>
+            <a href="/#contact">Contact Us</a>
+          </nav>
+          <div class="nav-ctas">
+            <a href="/#contact" class="btn btn-accent btn-sm">Direct Inquiry</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="services-hero">
+        <div class="container">
+          <nav class="services-nav" data-aos="fade-down">
+            <a href="/#divisions" class="back-link">
+              <i data-lucide="chevron-left"></i>
+              <span>Back to Divisions</span>
+            </a>
+          </nav>
+          <div class="hero-content-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <span class="hero-badge">KHABBAZ CONSULTING ENGINEERS</span>
+            <h1>Engineering & Architectural Excellence</h1>
+            <p>Multidisciplinary engineering consultancy delivering innovative architectural designs and comprehensive project management since 1998.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="capabilities-grid">
+          <div class="capability-item">
+            <div class="cap-icon"><i data-lucide="layers"></i></div>
+            <div class="cap-content">
+              <h3>Engineering Management</h3>
+              <p>Comprehensive management solutions for complex engineering projects, ensuring technical integrity, safety compliance, and operational efficiency from inception to completion.</p>
+            </div>
+          </div>
+          <div class="capability-item">
+            <div class="cap-icon"><i data-lucide="layout"></i></div>
+            <div class="cap-content">
+              <h3>Architectural Design</h3>
+              <p>Aesthetic and functional architectural solutions tailored to the unique requirements of the Saudi market, balancing modern innovation with regional heritage.</p>
+            </div>
+          </div>
+          <div class="capability-item">
+            <div class="cap-icon"><i data-lucide="monitor"></i></div>
+            <div class="cap-content">
+              <h3>3D Visualization</h3>
+              <p>High-fidelity 3D rendering, project presentations, and immersive video walk-throughs that provide stakeholders with a crystal-clear vision of final outcomes.</p>
+            </div>
+          </div>
+          <div class="capability-item">
+            <div class="cap-icon"><i data-lucide="clipboard-check"></i></div>
+            <div class="cap-content">
+              <h3>Project Supervision</h3>
+              <p>On-site execution support and rigorous project supervision to ensure adherence to engineering specifications, quality standards, and timelines.</p>
+            </div>
+          </div>
+          <div class="capability-item">
+            <div class="cap-icon"><i data-lucide="users"></i></div>
+            <div class="cap-content">
+              <h3>Collaborative Services</h3>
+              <p>Providing specialized engineering support and complementary services for both international consulting firms and local Saudi engineering companies.</p>
+            </div>
+          </div>
+          <div class="capability-item">
+            <div class="cap-icon"><i data-lucide="briefcase"></i></div>
+            <div class="cap-content">
+              <h3>Project Management</h3>
+              <p>End-to-end project lifecycle management focusing on risk assessment, resource optimization, and strategic planning for large-scale infrastructure.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="expertise-section">
+        <div class="container">
+          <div class="section-header" style="text-align: center;">
+            <span style="color: var(--accent);">Our Expertise</span>
+            <h2 style="color: white;">Sectors We Support</h2>
+            <p style="color: rgba(255,255,255,0.7);">Our multi-disciplinary team brings specialized knowledge to the Kingdom's most critical sectors.</p>
+          </div>
+          <div class="expertise-grid">
+            <div class="expertise-card">
+              <i data-lucide="factory" size="48"></i>
+              <h4>Petrochemical</h4>
+            </div>
+            <div class="expertise-card">
+              <i data-lucide="bridge" size="48"></i>
+              <h4>Infrastructure</h4>
+            </div>
+            <div class="expertise-card">
+              <i data-lucide="hotel" size="48"></i>
+              <h4>Commercial</h4>
+            </div>
+            <div class="expertise-card">
+              <i data-lucide="home" size="48"></i>
+              <h4>Residential</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="padding: 120px 0; text-align: center;">
+        <div class="container">
+          <h2>Ready to consult on your next project?</h2>
+          <p style="margin: 24px 0 48px; color: var(--text-muted); max-width: 600px; margin-inline: auto;">Connect with Dr. Ahmad Al-Khabbaz and our expert engineering team for a professional assessment of your technical requirements.</p>
+          <a href="/#contact" class="btn btn-primary">Schedule a Consultation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer style="border-top: 1px solid var(--border);">
+      <div class="container">
+        <div class="footer-bottom" style="border: none;">
+          <p>&copy; 2026 Al Khabbaz Corporate Enterprise. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

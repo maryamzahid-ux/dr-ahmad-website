@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hadakah Trading Establishment | Services Portfolio</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      .services-hero {
+        background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200') center/cover;
+        padding: 120px 0 80px;
+        color: white;
+        text-align: center;
+      }
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 32px;
+        padding: 80px 0;
+      }
+      .service-item {
+        background: white;
+        border: 1px solid var(--border);
+        padding: 40px;
+        border-radius: 8px;
+        transition: var(--transition);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .service-item:hover {
+        transform: translateY(-5px);
+        border-color: var(--accent);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+      }
+      .service-icon {
+        width: 50px;
+        height: 50px;
+        background: var(--surface);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent);
+        margin-bottom: 24px;
+      }
+      .service-item h3 {
+        font-size: 20px;
+        margin-bottom: 16px;
+        color: var(--primary);
+      }
+      .service-item p {
+        font-size: 14px;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+      .back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 40px;
+        color: white;
+        opacity: 0.8;
+        font-size: 14px;
+      }
+      .back-btn:hover {
+        opacity: 1;
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav-container">
+          <a href="/" class="logo">
+            <div class="logo-icon-svg">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 10L90 30V50L50 30V10Z" fill="#2563EB"/>
+                <path d="M90 50V70L50 90V70L90 50Z" fill="#F59E0B"/>
+                <path d="M50 90L10 70V30L50 50V90Z" fill="#14B8A6"/>
+                <path d="M50 30L90 50L50 70L10 50L50 30Z" fill="#0F172A" fill-opacity="0.2"/>
+                <path d="M50 10L90 30V70L50 90L10 70V30L50 10Z" stroke="#0F172A" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <h3>AL KHABBAZ</h3>
+              <span>Corporate Enterprise</span>
+            </div>
+          </a>
+          <nav class="nav-links">
+            <a href="/#home">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#divisions">Divisions</a>
+            <a href="/#contact">Contact Us</a>
+          </nav>
+          <div class="nav-ctas">
+            <a href="/#contact" class="btn btn-accent btn-sm">Direct Inquiry</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="services-hero trading-theme">
+        <div class="hero-bg">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920" alt="Trading & Logistics" />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+          <nav class="services-nav" data-aos="fade-down">
+            <a href="/#divisions" class="back-link">
+              <i data-lucide="chevron-left"></i>
+              <span>Back to Divisions</span>
+            </a>
+          </nav>
+          <div class="hero-content-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <span class="hero-badge trade-badge">HADAKAH TRADING ESTABLISHMENT</span>
+            <h1>Global Procurement & <br><span class="text-trade">Industrial Supply</span></h1>
+            <p>Reliable supply chain solutions for the Kingdom's critical industrial, commercial, and construction sectors since 1998.</p>
+            <div class="hero-btns">
+              <a href="#categories" class="btn btn-trade">Explore Inventory</a>
+              <a href="#contact" class="btn btn-outline-white">Request Quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trading Portfolio -->
+      <section id="categories" class="categories-section">
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Strategic Inventory</span>
+            <h2>Core Industrial Solutions</h2>
+          </div>
+          
+          <div class="categories-grid">
+            <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="category-img">
+                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600" alt="Electrical Equipment" />
+              </div>
+              <div class="category-content">
+                <i data-lucide="zap"></i>
+                <h3>Electrical Equipment</h3>
+                <p>Industrial motors, transformers, switchgears, and specialized power solutions.</p>
+              </div>
+            </div>
+            <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="category-img">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=600" alt="Construction Materials" />
+              </div>
+              <div class="category-content">
+                <i data-lucide="hammer"></i>
+                <h3>Construction Materials</h3>
+                <p>High-grade steel, cement, and specialized structural components for mega-projects.</p>
+              </div>
+            </div>
+            <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="category-img">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600" alt="Mechanical Tools" />
+              </div>
+              <div class="category-content">
+                <i data-lucide="settings"></i>
+                <h3>Industrial Machinery</h3>
+                <p>Precision tools, heavy machinery, and specialized maintenance equipment.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-header text-center" data-aos="fade-up" style="margin-top: 80px;">
+            <span class="section-tag">Comprehensive Range</span>
+            <h2>Supply Portfolio</h2>
+          </div>
+
+          <div class="services-grid">
+            <!-- Gifts & Promotions -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-icon"><i data-lucide="gift"></i></div>
+              <h3>Gifts & Promotions</h3>
+              <p>Bespoke branded merchandise, executive gift sets, and promotional items.</p>
+            </div>
+            <!-- Industrial Safety -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-icon"><i data-lucide="hard-hat"></i></div>
+              <h3>Industrial Safety Equipment</h3>
+              <p>Comprehensive PPE including head protection, safety footwear, and specialized gear.</p>
+            </div>
+            <!-- Uniforms -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-icon"><i data-lucide="shirt"></i></div>
+              <h3>Industrial Uniforms</h3>
+              <p>Durable, high-quality uniforms for industrial and hospitality sectors.</p>
+            </div>
+            <!-- IT -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-icon"><i data-lucide="laptop"></i></div>
+              <h3>IT & Computing</h3>
+              <p>Modern laptops, enterprise servers, and networking equipment.</p>
+            </div>
+            <!-- Photography -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-icon"><i data-lucide="camera"></i></div>
+              <h3>Imaging Solutions</h3>
+              <p>Professional-grade copy equipment and high-volume printers.</p>
+            </div>
+            <!-- General Supplies -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-icon"><i data-lucide="package"></i></div>
+              <h3>General Supplies</h3>
+              <p>All-encompassing supply solutions for offices, factories, and hospitals.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section style="background-color: var(--surface); text-align: center;">
+        <div class="container">
+          <h2>Need a specific supply solution?</h2>
+          <p style="margin: 20px 0 40px; color: var(--text-muted);">Our procurement team is ready to source high-quality materials tailored to your operational needs.</p>
+          <a href="/#contact" class="btn btn-primary">Request a Quote</a>
+        </div>
+      </section>
+    </main>
+
+    <footer style="margin-top: 0; border-top: 1px solid var(--border);">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; padding-top: 0;">
+          <p>&copy; 2026 Al Khabbaz Corporate Enterprise. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
