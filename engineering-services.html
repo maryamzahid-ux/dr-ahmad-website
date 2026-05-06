@@ -6,87 +6,6 @@
     <title>Al Khabbaz Consulting Engineers (KCE) | Engineering Excellence</title>
     <link rel="stylesheet" href="/src/style.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-      .services-hero {
-        background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=1200') center/cover;
-        padding: 140px 0 100px;
-        color: white;
-      }
-      .capabilities-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 60px;
-        padding: 100px 0;
-      }
-      .capability-item {
-        display: flex;
-        gap: 32px;
-      }
-      .cap-icon {
-        width: 64px;
-        height: 64px;
-        background: var(--surface);
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--accent);
-        flex-shrink: 0;
-      }
-      .cap-content h3 {
-        font-size: 24px;
-        margin-bottom: 16px;
-        color: var(--primary);
-      }
-      .cap-content p {
-        color: var(--text-muted);
-        line-height: 1.7;
-        font-size: 15px;
-      }
-      .expertise-section {
-        background-color: var(--primary);
-        color: var(--white);
-        padding: 100px 0;
-      }
-      .expertise-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 32px;
-        margin-top: 60px;
-      }
-      .expertise-card {
-        background: rgba(255,255,255,0.05);
-        padding: 40px;
-        border-radius: 4px;
-        border-bottom: 3px solid var(--accent);
-        text-align: center;
-        transition: var(--transition);
-      }
-      .expertise-card:hover {
-        background: rgba(255,255,255,0.1);
-        transform: translateY(-5px);
-      }
-      .expertise-card i {
-        color: var(--accent);
-        margin-bottom: 20px;
-        display: block;
-      }
-      .expertise-card h4 {
-        color: white;
-        font-size: 18px;
-      }
-      .back-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        margin-bottom: 40px;
-        color: var(--accent);
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: 2px;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -108,14 +27,23 @@
             </div>
           </a>
           <nav class="nav-links">
-            <a href="/#home">Home</a>
-            <a href="/#about">About</a>
-            <a href="/#divisions">Divisions</a>
-            <a href="/#contact">Contact Us</a>
+            <a href="/#home" data-i18n="nav.home">Home</a>
+            <a href="/#about" data-i18n="nav.about">About</a>
+            <a href="/#divisions" data-i18n="nav.divisions">Divisions</a>
+            <a href="/#contact" data-i18n="nav.contact">Contact Us</a>
           </nav>
           <div class="nav-ctas">
-            <a href="/#contact" class="btn btn-accent btn-sm">Direct Inquiry</a>
+            <div class="lang-switcher">
+              <button id="lang-btn" class="lang-btn">
+                <span>AR</span>
+                <i data-lucide="languages"></i>
+              </button>
+            </div>
+            <a href="/#contact" class="btn btn-accent btn-sm" data-i18n="nav.inquiry">Direct Inquiry</a>
           </div>
+          <button class="menu-toggle">
+            <i data-lucide="menu"></i>
+          </button>
         </div>
       </div>
     </header>
@@ -126,13 +54,13 @@
           <nav class="services-nav" data-aos="fade-down">
             <a href="/#divisions" class="back-link">
               <i data-lucide="chevron-left"></i>
-              <span>Back to Divisions</span>
+              <span data-i18n="services.back">Back to Divisions</span>
             </a>
           </nav>
           <div class="hero-content-wrapper" data-aos="fade-up" data-aos-delay="100">
-            <span class="hero-badge">KHABBAZ CONSULTING ENGINEERS</span>
-            <h1>Engineering & Architectural Excellence</h1>
-            <p>Multidisciplinary engineering consultancy delivering innovative architectural designs and comprehensive project management since 1998.</p>
+            <span class="hero-badge" data-i18n="services.engineering.badge">KHABBAZ CONSULTING ENGINEERS</span>
+            <h1 data-i18n="services.engineering.title">Engineering & Architectural Excellence</h1>
+            <p data-i18n="services.engineering.desc">Multidisciplinary engineering consultancy delivering innovative architectural designs and comprehensive project management since 1998.</p>
           </div>
         </div>
       </section>
@@ -142,42 +70,42 @@
           <div class="capability-item">
             <div class="cap-icon"><i data-lucide="layers"></i></div>
             <div class="cap-content">
-              <h3>Engineering Management</h3>
+              <h3 data-i18n="services.engineering.capabilities.management">Engineering Management</h3>
               <p>Comprehensive management solutions for complex engineering projects, ensuring technical integrity, safety compliance, and operational efficiency from inception to completion.</p>
             </div>
           </div>
           <div class="capability-item">
             <div class="cap-icon"><i data-lucide="layout"></i></div>
             <div class="cap-content">
-              <h3>Architectural Design</h3>
+              <h3 data-i18n="services.engineering.capabilities.architectural">Architectural Design</h3>
               <p>Aesthetic and functional architectural solutions tailored to the unique requirements of the Saudi market, balancing modern innovation with regional heritage.</p>
             </div>
           </div>
           <div class="capability-item">
             <div class="cap-icon"><i data-lucide="monitor"></i></div>
             <div class="cap-content">
-              <h3>3D Visualization</h3>
+              <h3 data-i18n="services.engineering.capabilities.visualization">3D Visualization</h3>
               <p>High-fidelity 3D rendering, project presentations, and immersive video walk-throughs that provide stakeholders with a crystal-clear vision of final outcomes.</p>
             </div>
           </div>
           <div class="capability-item">
             <div class="cap-icon"><i data-lucide="clipboard-check"></i></div>
             <div class="cap-content">
-              <h3>Project Supervision</h3>
+              <h3 data-i18n="services.engineering.capabilities.supervision">Project Supervision</h3>
               <p>On-site execution support and rigorous project supervision to ensure adherence to engineering specifications, quality standards, and timelines.</p>
             </div>
           </div>
           <div class="capability-item">
             <div class="cap-icon"><i data-lucide="users"></i></div>
             <div class="cap-content">
-              <h3>Collaborative Services</h3>
+              <h3 data-i18n="services.engineering.capabilities.collaborative">Collaborative Services</h3>
               <p>Providing specialized engineering support and complementary services for both international consulting firms and local Saudi engineering companies.</p>
             </div>
           </div>
           <div class="capability-item">
             <div class="cap-icon"><i data-lucide="briefcase"></i></div>
             <div class="cap-content">
-              <h3>Project Management</h3>
+              <h3 data-i18n="services.engineering.capabilities.projectMgmt">Project Management</h3>
               <p>End-to-end project lifecycle management focusing on risk assessment, resource optimization, and strategic planning for large-scale infrastructure.</p>
             </div>
           </div>
@@ -224,7 +152,7 @@
     <footer style="border-top: 1px solid var(--border);">
       <div class="container">
         <div class="footer-bottom" style="border: none;">
-          <p>&copy; 2026 Al Khabbaz Corporate Enterprise. All rights reserved.</p>
+          <p data-i18n="footer.rights">&copy; 2026 Al Khabbaz Corporate Enterprise. All rights reserved.</p>
         </div>
       </div>
     </footer>

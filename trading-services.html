@@ -6,69 +6,6 @@
     <title>Hadakah Trading Establishment | Services Portfolio</title>
     <link rel="stylesheet" href="/src/style.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-      .services-hero {
-        background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200') center/cover;
-        padding: 120px 0 80px;
-        color: white;
-        text-align: center;
-      }
-      .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 32px;
-        padding: 80px 0;
-      }
-      .service-item {
-        background: white;
-        border: 1px solid var(--border);
-        padding: 40px;
-        border-radius: 8px;
-        transition: var(--transition);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .service-item:hover {
-        transform: translateY(-5px);
-        border-color: var(--accent);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-      }
-      .service-icon {
-        width: 50px;
-        height: 50px;
-        background: var(--surface);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--accent);
-        margin-bottom: 24px;
-      }
-      .service-item h3 {
-        font-size: 20px;
-        margin-bottom: 16px;
-        color: var(--primary);
-      }
-      .service-item p {
-        font-size: 14px;
-        color: var(--text-muted);
-        line-height: 1.6;
-      }
-      .back-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        margin-bottom: 40px;
-        color: white;
-        opacity: 0.8;
-        font-size: 14px;
-      }
-      .back-btn:hover {
-        opacity: 1;
-        color: var(--accent);
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -90,14 +27,23 @@
             </div>
           </a>
           <nav class="nav-links">
-            <a href="/#home">Home</a>
-            <a href="/#about">About</a>
-            <a href="/#divisions">Divisions</a>
-            <a href="/#contact">Contact Us</a>
+            <a href="/#home" data-i18n="nav.home">Home</a>
+            <a href="/#about" data-i18n="nav.about">About</a>
+            <a href="/#divisions" data-i18n="nav.divisions">Divisions</a>
+            <a href="/#contact" data-i18n="nav.contact">Contact Us</a>
           </nav>
           <div class="nav-ctas">
-            <a href="/#contact" class="btn btn-accent btn-sm">Direct Inquiry</a>
+            <div class="lang-switcher">
+              <button id="lang-btn" class="lang-btn">
+                <span>AR</span>
+                <i data-lucide="languages"></i>
+              </button>
+            </div>
+            <a href="/#contact" class="btn btn-accent btn-sm" data-i18n="nav.inquiry">Direct Inquiry</a>
           </div>
+          <button class="menu-toggle">
+            <i data-lucide="menu"></i>
+          </button>
         </div>
       </div>
     </header>
@@ -112,16 +58,16 @@
           <nav class="services-nav" data-aos="fade-down">
             <a href="/#divisions" class="back-link">
               <i data-lucide="chevron-left"></i>
-              <span>Back to Divisions</span>
+              <span data-i18n="services.back">Back to Divisions</span>
             </a>
           </nav>
           <div class="hero-content-wrapper" data-aos="fade-up" data-aos-delay="100">
-            <span class="hero-badge trade-badge">HADAKAH TRADING ESTABLISHMENT</span>
-            <h1>Global Procurement & <br><span class="text-trade">Industrial Supply</span></h1>
-            <p>Reliable supply chain solutions for the Kingdom's critical industrial, commercial, and construction sectors since 1998.</p>
+            <span class="hero-badge trade-badge" data-i18n="services.trading.badge">HADAKAH TRADING ESTABLISHMENT</span>
+            <h1><span data-i18n="services.trading.title">Global Procurement & Industrial Supply</span></h1>
+            <p data-i18n="services.trading.desc">Reliable supply chain solutions for the Kingdom's critical industrial, commercial, and construction sectors since 1998.</p>
             <div class="hero-btns">
-              <a href="#categories" class="btn btn-trade">Explore Inventory</a>
-              <a href="#contact" class="btn btn-outline-white">Request Quote</a>
+              <a href="#categories" class="btn btn-trade" data-i18n="services.trading.explore">Explore Inventory</a>
+              <a href="#contact" class="btn btn-outline-white" data-i18n="services.trading.quote">Request Quote</a>
             </div>
           </div>
         </div>
@@ -227,7 +173,7 @@
     <footer style="margin-top: 0; border-top: 1px solid var(--border);">
       <div class="container">
         <div class="footer-bottom" style="border: none; padding-top: 0;">
-          <p>&copy; 2026 Al Khabbaz Corporate Enterprise. All rights reserved.</p>
+          <p data-i18n="footer.rights">&copy; 2026 Al Khabbaz Corporate Enterprise. All rights reserved.</p>
         </div>
       </div>
     </footer>

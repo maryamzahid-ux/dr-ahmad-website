@@ -36,14 +36,23 @@
             </div>
           </a>
           <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#divisions">Divisions</a>
-            <a href="#contact">Contact Us</a>
+            <a href="#home" data-i18n="nav.home">Home</a>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#divisions" data-i18n="nav.divisions">Divisions</a>
+            <a href="#contact" data-i18n="nav.contact">Contact Us</a>
           </nav>
           <div class="nav-ctas">
-            <a href="#contact" class="btn btn-accent btn-sm">Direct Inquiry</a>
+            <div class="lang-switcher">
+              <button id="lang-btn" class="lang-btn">
+                <span>AR</span>
+                <i data-lucide="languages"></i>
+              </button>
+            </div>
+            <a href="#contact" class="btn btn-accent btn-sm" data-i18n="nav.inquiry">Direct Inquiry</a>
           </div>
+          <button class="menu-toggle">
+            <i data-lucide="menu"></i>
+          </button>
         </div>
       </div>
     </header>
@@ -65,21 +74,19 @@
         </div>
         
         <div class="container hero-center-content" data-aos="fade-up" data-aos-duration="1200">
-          <div class="hero-badge">A Legacy of Excellence Since 1998</div>
-          <h1>The Gold Standard in <br><span class="text-accent">Corporate Engineering</span></h1>
-          <p>Al Khabbaz Corporate Enterprise delivers sophisticated engineering consultancy, strategic industrial trading, and specialized hygiene solutions across Saudi Arabia.</p>
+          <div class="hero-badge" data-i18n="hero.badge">A Legacy of Excellence Since 1998</div>
+          <h1><span data-i18n="hero.title">The Gold Standard in</span> <br><span class="text-accent" data-i18n="hero.titleAccent">Corporate Engineering</span></h1>
+          <p data-i18n="hero.desc">Al Khabbaz Corporate Enterprise delivers sophisticated engineering consultancy, strategic industrial trading, and specialized hygiene solutions across Saudi Arabia.</p>
           <div class="hero-btns">
-            <a href="#divisions" class="btn btn-primary">Explore Divisions</a>
-            <a href="#contact" class="btn btn-outline-white">Start an Inquiry</a>
+            <a href="#divisions" class="btn btn-primary" data-i18n="hero.explore">Explore Divisions</a>
+            <a href="#contact" class="btn btn-outline-white" data-i18n="hero.start">Start an Inquiry</a>
           </div>
           <div class="hero-stats-row">
             <div class="stat-item">
-              <strong>25+</strong>
-              <span>Years Experience</span>
+              <strong data-i18n="hero.stat1">25+ Years Experience</strong>
             </div>
             <div class="stat-item">
-              <strong>100%</strong>
-              <span>Saudi Owned</span>
+              <strong data-i18n="hero.stat2">100% Saudi Owned</strong>
             </div>
           </div>
         </div>
@@ -97,31 +104,31 @@
       <section id="divisions" style="padding-bottom: 60px;">
         <div class="container">
           <div class="section-header" data-aos="fade-up">
-            <span>Our Business Units</span>
-            <h2>Integrated Solutions for Complex Industries</h2>
-            <p>Al Khabbaz operates through specialized subsidiaries, each a leader in its respective domain, ensuring focused expertise and operational excellence.</p>
+            <span data-i18n="divisions.tag">Our Business Units</span>
+            <h2 data-i18n="divisions.title">Integrated Solutions for Complex Industries</h2>
+            <p data-i18n="divisions.desc">Al Khabbaz operates through specialized subsidiaries, each a leader in its respective domain, ensuring focused expertise and operational excellence.</p>
           </div>
           <div class="units-grid">
             <!-- Engineering -->
             <div class="unit-card engineering" data-aos="fade-up" data-aos-delay="100">
               <div class="unit-icon"><i data-lucide="building-2"></i></div>
-              <h3>Engineering Consultant</h3>
-              <p>Specialized consultancy in engineering management, architectural design, 3D project visualization, and construction supervision.</p>
-              <a href="engineering-services.html">Learn More <i data-lucide="arrow-right"></i></a>
+              <h3 data-i18n="divisions.eng">Engineering Consultant</h3>
+              <p data-i18n="divisions.engDesc">Specialized consultancy in engineering management, architectural design, 3D project visualization, and construction supervision.</p>
+              <a href="engineering-services.html"><span data-i18n="divisions.learnMore">Learn More</span> <i data-lucide="arrow-right"></i></a>
             </div>
             <!-- Trading -->
             <div class="unit-card trading" data-aos="fade-up" data-aos-delay="200">
               <div class="unit-icon"><i data-lucide="shopping-bag"></i></div>
-              <h3>Hadakah Trading</h3>
-              <p>Strategic procurement and supply of industrial equipment, commercial products, and high-quality construction materials.</p>
-              <a href="trading-services.html">Learn More <i data-lucide="arrow-right"></i></a>
+              <h3 data-i18n="divisions.trade">Hadakah Trading</h3>
+              <p data-i18n="divisions.tradeDesc">Strategic procurement and supply of industrial equipment, commercial products, and high-quality construction materials.</p>
+              <a href="trading-services.html"><span data-i18n="divisions.learnMore">Learn More</span> <i data-lucide="arrow-right"></i></a>
             </div>
             <!-- Hygiene -->
             <div class="unit-card hygiene" data-aos="fade-up" data-aos-delay="300">
               <div class="unit-icon"><i data-lucide="shield-check"></i></div>
-              <h3>Hadakah Hygiene</h3>
-              <p>Leading provider of industrial hygiene and pest control services, featuring proprietary products like Bloom-100 and Termiguard.</p>
-              <a href="hygiene-services.html">Learn More <i data-lucide="arrow-right"></i></a>
+              <h3 data-i18n="divisions.hygiene">Hadakah Hygiene</h3>
+              <p data-i18n="divisions.hygieneDesc">Leading provider of industrial hygiene and pest control services, featuring proprietary products like Bloom-100 and Termiguard.</p>
+              <a href="hygiene-services.html"><span data-i18n="divisions.learnMore">Learn More</span> <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -167,23 +174,23 @@
               </div>
             </div>
             <div class="about-content">
-              <span class="section-tag">Leadership & Vision</span>
-              <h2>A Legacy of Professional Management</h2>
-              <p>Founded and led by <strong>Dr. Ahmad A. Al-Khabbaz</strong>, Al Khabbaz Corporate Enterprise represents decades of experience in engineering management and international business operations.</p>
-              <p>We are committed to delivering high-quality, reliable, and sustainable solutions that empower the Kingdom's industrial growth and professional standards.</p>
+              <span class="section-tag" data-i18n="about.tag">Leadership & Vision</span>
+              <h2 data-i18n="about.title">A Legacy of Professional Management</h2>
+              <p data-i18n="about.desc1">Founded and led by <strong>Dr. Ahmad A. Al-Khabbaz</strong>, Al Khabbaz Corporate Enterprise represents decades of experience in engineering management and international business operations.</p>
+              <p data-i18n="about.desc2">We are committed to delivering high-quality, reliable, and sustainable solutions that empower the Kingdom's industrial growth and professional standards.</p>
               <div class="about-stats">
                 <div class="about-stat-item">
                   <i data-lucide="award"></i>
                   <div>
-                    <h4>Industry Leader</h4>
-                    <p>Recognized for excellence in consultancy.</p>
+                    <h4 data-i18n="about.stat1Title">Industry Leader</h4>
+                    <p data-i18n="about.stat1Desc">Recognized for excellence in consultancy.</p>
                   </div>
                 </div>
                 <div class="about-stat-item">
                   <i data-lucide="globe"></i>
                   <div>
-                    <h4>Saudi Grounded</h4>
-                    <p>Deep roots in the Eastern Province.</p>
+                    <h4 data-i18n="about.stat2Title">Saudi Grounded</h4>
+                    <p data-i18n="about.stat2Desc">Deep roots in the Eastern Province.</p>
                   </div>
                 </div>
               </div>
@@ -198,47 +205,47 @@
           <div class="contact-grid">
             <div class="contact-info">
               <div>
-                <span class="hero-tag">Get in Touch</span>
-                <h2>Connect with our Corporate Office</h2>
-                <p style="margin-top: 16px; opacity: 0.8;">Our team is ready to discuss your requirements and how we can support your business objectives.</p>
+                <span class="hero-tag" data-i18n="contact.tag">Get in Touch</span>
+                <h2 data-i18n="contact.title">Connect with our Corporate Office</h2>
+                <p style="margin-top: 16px; opacity: 0.8;" data-i18n="contact.desc">Our team is ready to discuss your requirements and how we can support your business objectives.</p>
               </div>
               <div class="info-item">
-                <h4>Address</h4>
+                <h4 data-i18n="contact.address">Address</h4>
                 <p>Building #3603, Unit #103, 2nd Cross @ Al Majmaa Street,<br>Al-Thuqbah, Al Khobar, 34623-8841, Saudi Arabia</p>
               </div>
               <div class="info-item">
-                <h4>Phone</h4>
+                <h4 data-i18n="contact.phone">Phone</h4>
                 <p>+966 13 894 8877</p>
               </div>
               <div class="info-item">
-                <h4>Email</h4>
+                <h4 data-i18n="contact.email">Email</h4>
                 <p>info@alkhabbaz.net</p>
               </div>
             </div>
             <div class="contact-form">
               <form>
                 <div class="form-group">
-                  <label>Full Name</label>
-                  <input type="text" placeholder="Enter your name" />
+                  <label data-i18n="contact.nameLabel">Full Name</label>
+                  <input type="text" data-i18n-placeholder="contact.placeholderName" placeholder="Enter your name" />
                 </div>
                 <div class="form-group">
-                  <label>Email Address</label>
-                  <input type="email" placeholder="email@company.com" />
+                  <label data-i18n="contact.emailLabel">Email Address</label>
+                  <input type="email" data-i18n-placeholder="contact.placeholderEmail" placeholder="email@company.com" />
                 </div>
                 <div class="form-group">
-                  <label>Division of Interest</label>
-                  <select style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 4px;">
-                    <option>Engineering Consultancy</option>
-                    <option>Trading & Supplies</option>
-                    <option>Hygiene & Pest Control</option>
-                    <option>General Inquiry</option>
+                  <label data-i18n="contact.divisionLabel">Division of Interest</label>
+                  <select id="division-select" style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 4px;">
+                    <option data-i18n="contact.options.0">Engineering Consultancy</option>
+                    <option data-i18n="contact.options.1">Trading & Supplies</option>
+                    <option data-i18n="contact.options.2">Hygiene & Pest Control</option>
+                    <option data-i18n="contact.options.3">General Inquiry</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label>Message</label>
-                  <textarea placeholder="How can we help you?"></textarea>
+                  <label data-i18n="contact.messageLabel">Message</label>
+                  <textarea data-i18n-placeholder="contact.placeholderMessage" placeholder="How can we help you?"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact.send">Send Inquiry</button>
               </form>
             </div>
           </div>
@@ -264,36 +271,35 @@
                 <span>Corporate Enterprise</span>
               </div>
             </div>
-            <p style="font-size: 14px; color: var(--text-muted); max-width: 300px;">A leading Saudi corporate group committed to engineering excellence and industrial reliability since 1998.</p>
+            <p style="font-size: 14px; color: var(--text-muted); max-width: 300px;" data-i18n="footer.desc">A leading Saudi corporate group committed to engineering excellence and industrial reliability since 1998.</p>
           </div>
           <div class="footer-col">
-            <h4>Quick Links</h4>
+            <h4 data-i18n="footer.quickLinks">Quick Links</h4>
             <ul class="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#divisions">Divisions</a></li>
-              <li><a href="#industries">Industries</a></li>
+              <li><a href="#home" data-i18n="nav.home">Home</a></li>
+              <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+              <li><a href="#divisions" data-i18n="nav.divisions">Divisions</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Our Services</h4>
+            <h4 data-i18n="footer.services">Our Services</h4>
             <ul class="footer-links">
-              <li><a href="#">Engineering Design</a></li>
-              <li><a href="#">Project Supervision</a></li>
-              <li><a href="#">Industrial Supplies</a></li>
-              <li><a href="#">Pest Control</a></li>
+              <li><a href="#" data-i18n="contact.options.0">Engineering Design</a></li>
+              <li><a href="#" data-i18n="divisions.eng">Project Supervision</a></li>
+              <li><a href="#" data-i18n="divisions.trade">Industrial Supplies</a></li>
+              <li><a href="#" data-i18n="divisions.hygiene">Pest Control</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Head Office</h4>
-            <p style="font-size: 14px; color: var(--text-muted);">Al-Thuqbah, Al Khobar<br>Eastern Province, KSA<br>P.O. Box 31926</p>
+            <h4 data-i18n="footer.headOffice">Head Office</h4>
+            <p style="font-size: 14px; color: var(--text-muted);" data-i18n="footer.address">Al-Thuqbah, Al Khobar<br>Eastern Province, KSA<br>P.O. Box 31926</p>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 Al Khabbaz Corporate Enterprise. All rights reserved.</p>
+          <p data-i18n="footer.rights">&copy; 2026 Al Khabbaz Corporate Enterprise. All rights reserved.</p>
           <div style="display: flex; gap: 24px;">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="#" data-i18n="footer.terms">Terms of Service</a>
           </div>
         </div>
       </div>
