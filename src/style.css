@@ -12,6 +12,19 @@
   --text-muted: #64748B;
   --border: #E2E8F0;
   
+  /* Division Colors */
+  --adv-purple: #8B5CF6;
+  --signs-orange: #F59E0B; /* Keeping it close to gold but distinct if needed, actually orange is #F97316 */
+  --signs-brand: #F97316;
+  --pub-indigo: #6366F1;
+  --trade-gold: #F59E0B;
+  
+  /* Division Surfaces */
+  --surface-adv: rgba(139, 92, 246, 0.05);
+  --surface-signs: rgba(249, 115, 22, 0.05);
+  --surface-pub: rgba(99, 102, 241, 0.05);
+  --surface-trade: rgba(245, 158, 11, 0.05);
+  
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
   --font-logo: 'Playfair Display', serif;
@@ -199,10 +212,9 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 32px;
   align-items: center;
-  margin-left: auto;
-  margin-right: 60px;
+  margin-left: auto; /* Pushes links away from the logo */
 }
 
 .nav-links a {
@@ -221,6 +233,7 @@ header {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-left: 60px; /* Ensures space between last nav link and language switcher */
 }
 
 .btn-sm {
@@ -566,8 +579,20 @@ section {
 /* --- Business Units --- */
 .units-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
+}
+
+@media (max-width: 1200px) {
+  .units-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .units-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .unit-card {
@@ -618,21 +643,25 @@ section {
   transition: all 0.3s ease;
 }
 
-.unit-card.engineering { border-bottom: 4px solid var(--eng-blue); }
+.unit-card.advertising { border-bottom: 4px solid var(--adv-purple); }
+.unit-card.signs { border-bottom: 4px solid var(--signs-brand); }
+.unit-card.publishing { border-bottom: 4px solid var(--pub-indigo); }
 .unit-card.trading { border-bottom: 4px solid var(--trade-gold); }
-.unit-card.hygiene { border-bottom: 4px solid var(--hygiene-teal); }
 
-.unit-card.engineering:hover { background-color: var(--surface-eng); }
+.unit-card.advertising:hover { background-color: var(--surface-adv); }
+.unit-card.signs:hover { background-color: var(--surface-signs); }
+.unit-card.publishing:hover { background-color: var(--surface-pub); }
 .unit-card.trading:hover { background-color: var(--surface-trade); }
-.unit-card.hygiene:hover { background-color: var(--surface-hygiene); }
 
-.unit-card.engineering .unit-icon { background-color: rgba(37, 99, 235, 0.1); color: var(--eng-blue); }
+.unit-card.advertising .unit-icon { background-color: rgba(139, 92, 246, 0.1); color: var(--adv-purple); }
+.unit-card.signs .unit-icon { background-color: rgba(249, 115, 22, 0.1); color: var(--signs-brand); }
+.unit-card.publishing .unit-icon { background-color: rgba(99, 102, 241, 0.1); color: var(--pub-indigo); }
 .unit-card.trading .unit-icon { background-color: rgba(245, 158, 11, 0.1); color: var(--trade-gold); }
-.unit-card.hygiene .unit-icon { background-color: rgba(20, 184, 166, 0.1); color: var(--hygiene-teal); }
 
-.unit-card.engineering:hover .unit-icon { background-color: var(--eng-blue); color: var(--white); }
+.unit-card.advertising:hover .unit-icon { background-color: var(--adv-purple); color: var(--white); }
+.unit-card.signs:hover .unit-icon { background-color: var(--signs-brand); color: var(--white); }
+.unit-card.publishing:hover .unit-icon { background-color: var(--pub-indigo); color: var(--white); }
 .unit-card.trading:hover .unit-icon { background-color: var(--trade-gold); color: var(--white); }
-.unit-card.hygiene:hover .unit-icon { background-color: var(--hygiene-teal); color: var(--white); }
 
 .unit-card h3 {
   font-size: 22px;
@@ -960,9 +989,7 @@ footer {
   :root {
     --section-padding: 100px 24px;
   }
-  .units-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   .about-flex {
     flex-direction: column;
     text-align: center;
@@ -1046,9 +1073,7 @@ footer {
     flex-wrap: wrap;
   }
 
-  .units-grid {
-    grid-template-columns: 1fr;
-  }
+
 
   .highlights-grid {
     grid-template-columns: 1fr;
@@ -1151,17 +1176,27 @@ footer {
   object-fit: cover;
 }
 
+.text-advertising { color: var(--adv-purple); }
+.text-signs { color: var(--signs-brand); }
+.text-publishing { color: var(--pub-indigo); }
 .text-trade { color: var(--trade-gold); }
-.text-hygiene { color: var(--hygiene-teal); }
 
+.advertising-badge { border-left: 4px solid var(--adv-purple); background: rgba(139, 92, 246, 0.1); color: var(--adv-purple); }
+.signs-badge { border-left: 4px solid var(--signs-brand); background: rgba(249, 115, 22, 0.1); color: var(--signs-brand); }
+.publishing-badge { border-left: 4px solid var(--pub-indigo); background: rgba(99, 102, 241, 0.1); color: var(--pub-indigo); }
 .trade-badge { border-left: 4px solid var(--trade-gold); background: rgba(245, 158, 11, 0.1); color: var(--trade-gold); }
-.hygiene-badge { border-left: 4px solid var(--hygiene-teal); background: rgba(20, 184, 166, 0.1); color: var(--hygiene-teal); }
+
+.btn-advertising { background: var(--adv-purple); color: var(--white); }
+.btn-advertising:hover { background: #7c3aed; transform: translateY(-2px); }
+
+.btn-signs { background: var(--signs-brand); color: var(--white); }
+.btn-signs:hover { background: #ea580c; transform: translateY(-2px); }
+
+.btn-publishing { background: var(--pub-indigo); color: var(--white); }
+.btn-publishing:hover { background: #4f46e5; transform: translateY(-2px); }
 
 .btn-trade { background: var(--trade-gold); color: var(--white); }
 .btn-trade:hover { background: #d98e0a; transform: translateY(-2px); }
-
-.btn-hygiene { background: var(--hygiene-teal); color: var(--white); }
-.btn-hygiene:hover { background: #119a8a; transform: translateY(-2px); }
 
 /* --- Categories Grid --- */
 .categories-section {
@@ -1217,8 +1252,10 @@ footer {
   color: var(--accent);
 }
 
+.advertising-theme .category-content i { color: var(--adv-purple); }
+.signs-theme .category-content i { color: var(--signs-brand); }
+.publishing-theme .category-content i { color: var(--pub-indigo); }
 .trading-theme .category-content i { color: var(--trade-gold); }
-.hygiene-theme .category-content i { color: var(--hygiene-teal); }
 
 .category-content h3 {
   font-size: 20px;

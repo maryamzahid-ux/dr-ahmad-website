@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hadakah Advertising & Promotion | Services Portfolio</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav-container">
+          <a href="/" class="logo">
+            <div class="logo-icon-svg">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 10L90 30V50L50 30V10Z" fill="#2563EB"/>
+                <path d="M90 50V70L50 90V70L90 50Z" fill="#F59E0B"/>
+                <path d="M50 90L10 70V30L50 50V90Z" fill="#14B8A6"/>
+                <path d="M50 30L90 50L50 70L10 50L50 30Z" fill="#0F172A" fill-opacity="0.2"/>
+                <path d="M50 10L90 30V70L50 90L10 70V30L50 10Z" stroke="#0F172A" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <h3>AL KHABBAZ</h3>
+              <span>Corporate Enterprise</span>
+            </div>
+          </a>
+          <nav class="nav-links">
+            <a href="/#home" data-i18n="nav.home">Home</a>
+            <a href="/#about" data-i18n="nav.about">About</a>
+            <a href="/#divisions" data-i18n="nav.divisions">Divisions</a>
+            <a href="/#contact" data-i18n="nav.contact">Contact Us</a>
+          </nav>
+          <div class="nav-ctas">
+            <div class="lang-switcher">
+              <button id="lang-btn" class="lang-btn">
+                <span>AR</span>
+                <i data-lucide="languages"></i>
+              </button>
+            </div>
+            <a href="/#contact" class="btn btn-accent btn-sm" data-i18n="nav.inquiry">Direct Inquiry</a>
+          </div>
+          <button class="menu-toggle">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="services-hero advertising-theme">
+        <div class="hero-bg">
+          <img src="advertising_hero_1778072499386.png" alt="Advertising & Promotion" />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+          <nav class="services-nav" data-aos="fade-down">
+            <a href="/#divisions" class="back-link">
+              <i data-lucide="chevron-left"></i>
+              <span data-i18n="services.back">Back to Divisions</span>
+            </a>
+          </nav>
+          <div class="hero-content-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <span class="hero-badge advertising-badge" data-i18n="services.advertising.badge">HADAKAH ADVERTISING & PROMOTION EST.</span>
+            <h1><span data-i18n="services.advertising.title">Creative Advertising & Promotion</span></h1>
+            <p data-i18n="services.advertising.desc">Transforming visions into high-impact reality with professional advertising materials designed to captivate your audience.</p>
+            <div class="hero-btns">
+              <a href="#capabilities" class="btn btn-advertising">Our Capabilities</a>
+              <a href="/#contact" class="btn btn-outline-white">Start a Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="capabilities" class="categories-section">
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Expertise</span>
+            <h2>Our Creative Capabilities</h2>
+          </div>
+          
+          <div class="categories-grid">
+            <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="category-img">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600" alt="Brand Identity" />
+              </div>
+              <div class="category-content">
+                <i data-lucide="palette"></i>
+                <h3 data-i18n="services.advertising.capabilities.branding">Brand Identity</h3>
+                <p>Developing unique visual identities and brand guidelines that resonate with your target market.</p>
+              </div>
+            </div>
+            <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="category-img">
+                <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=600" alt="Marketing Materials" />
+              </div>
+              <div class="category-content">
+                <i data-lucide="layers"></i>
+                <h3 data-i18n="services.advertising.capabilities.marketing">Marketing Materials</h3>
+                <p>High-impact brochures, catalogs, and flyers that communicate your value proposition effectively.</p>
+              </div>
+            </div>
+            <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="category-img">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600" alt="Digital Media" />
+              </div>
+              <div class="category-content">
+                <i data-lucide="monitor"></i>
+                <h3 data-i18n="services.advertising.capabilities.digital">Digital Media</h3>
+                <p>Engaging social media content, digital banners, and multimedia presentations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer style="margin-top: 0; border-top: 1px solid var(--border);">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; padding-top: 0;">
+          <p data-i18n="footer.rights">&copy; 2026 Al Khabbaz Corporate Enterprise. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

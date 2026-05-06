@@ -10,8 +10,8 @@ export const translations = {
     hero: {
       badge: "A Legacy of Excellence Since 1998",
       title: "The Gold Standard in",
-      titleAccent: "Corporate Engineering",
-      desc: "Al Khabbaz Corporate Enterprise delivers sophisticated engineering consultancy, strategic industrial trading, and specialized hygiene solutions across Saudi Arabia.",
+      titleAccent: "Corporate Excellence",
+      desc: "Al Khabbaz Corporate Enterprise delivers sophisticated advertising, strategic industrial trading, and professional signs & publishing solutions across Saudi Arabia.",
       explore: "Explore Divisions",
       start: "Start an Inquiry",
       stat1: "25+ Years Experience",
@@ -19,23 +19,25 @@ export const translations = {
     },
     divisions: {
       tag: "Our Business Units",
-      title: "Integrated Solutions for Complex Industries",
+      title: "Integrated Solutions for Modern Industries",
       desc: "Al Khabbaz operates through specialized subsidiaries, each a leader in its respective domain, ensuring focused expertise and operational excellence.",
-      eng: "Engineering Consultant",
-      engDesc: "Specialized consultancy in engineering management, architectural design, 3D project visualization, and construction supervision.",
+      advertising: "Hadakah Advertising",
+      advDesc: "Professional preparation of all types of high-impact advertising materials and promotional content.",
+      signs: "Hadakah Signs",
+      signsDesc: "Design, preparation, and installation of commercial sign boards, construction project signs, and wayfinding systems.",
+      publishing: "Hadakah Publishing",
+      pubDesc: "Expert arrangement, printing, and publishing of academic, commercial, and promotional materials.",
       trade: "Hadakah Trading",
       tradeDesc: "Strategic procurement and supply of industrial equipment, commercial products, and high-quality construction materials.",
-      hygiene: "Hadakah Hygiene",
-      hygieneDesc: "Leading provider of industrial hygiene and pest control services, featuring proprietary products like Bloom-100 and Termiguard.",
       learnMore: "Learn More"
     },
     about: {
       tag: "Leadership & Vision",
       title: "A Legacy of Professional Management",
-      desc1: "Founded and led by Dr. Ahmad A. Al-Khabbaz, Al Khabbaz Corporate Enterprise represents decades of experience in engineering management and international business operations.",
+      desc1: "Founded and led by Dr. Ahmad A. Al-Khabbaz, Al Khabbaz Corporate Enterprise represents decades of experience in diverse business operations and international management.",
       desc2: "We are committed to delivering high-quality, reliable, and sustainable solutions that empower the Kingdom's industrial growth and professional standards.",
       stat1Title: "Industry Leader",
-      stat1Desc: "Recognized for excellence in consultancy.",
+      stat1Desc: "Recognized for excellence in diverse sectors.",
       stat2Title: "Saudi Grounded",
       stat2Desc: "Deep roots in the Eastern Province.",
       exp: "Established"
@@ -56,14 +58,15 @@ export const translations = {
       placeholderEmail: "email@company.com",
       placeholderMessage: "How can we help you?",
       options: [
-        "Engineering Consultancy",
+        "Advertising & Promotion",
+        "Signs & Calligraphy",
+        "Publishing & Printing",
         "Trading & Supplies",
-        "Hygiene & Pest Control",
         "General Inquiry"
       ]
     },
     footer: {
-      desc: "A leading Saudi corporate group committed to engineering excellence and industrial reliability since 1998.",
+      desc: "A leading Saudi corporate group committed to excellence and industrial reliability since 1998.",
       quickLinks: "Quick Links",
       services: "Our Services",
       headOffice: "Head Office",
@@ -74,17 +77,37 @@ export const translations = {
     },
     services: {
       back: "Back to Divisions",
-      engineering: {
-        title: "Engineering & Architectural Excellence",
-        desc: "Multidisciplinary engineering consultancy delivering innovative architectural designs and comprehensive project management since 1998.",
-        badge: "KHABBAZ CONSULTING ENGINEERS",
+      advertising: {
+        title: "Creative Advertising & Promotion",
+        desc: "Transforming visions into high-impact reality with professional advertising materials designed to captivate your audience.",
+        badge: "HADAKAH ADVERTISING & PROMOTION EST.",
         capabilities: {
-          management: "Engineering Management",
-          architectural: "Architectural Design",
-          visualization: "3D Visualization",
-          supervision: "Project Supervision",
-          collaborative: "Collaborative Services",
-          projectMgmt: "Project Management"
+          branding: "Brand Identity",
+          marketing: "Marketing Materials",
+          digital: "Digital Media",
+          promotional: "Promotional Items"
+        }
+      },
+      signs: {
+        title: "Signs & Calligraphy Solutions",
+        desc: "Premium signage solutions from concept to installation, ensuring your brand stands out with clarity and durability.",
+        badge: "HADAKAH SIGNS & CALLIGRAPHY EST.",
+        capabilities: {
+          commercial: "Commercial Sign Boards",
+          construction: "Construction Signs",
+          wayfinding: "Wayfinding Systems",
+          calligraphy: "Expert Calligraphy"
+        }
+      },
+      publishing: {
+        title: "Professional Publishing & Print",
+        desc: "Comprehensive publishing services for academic, commercial, and promotional materials with a focus on precision and quality.",
+        badge: "HADAKAH PUBLISHING",
+        capabilities: {
+          academic: "Academic Publishing",
+          commercial: "Commercial Print",
+          arrangement: "Content Arrangement",
+          distribution: "Publication Services"
         }
       },
       trading: {
@@ -93,12 +116,6 @@ export const translations = {
         badge: "HADAKAH TRADING ESTABLISHMENT",
         explore: "Explore Inventory",
         quote: "Request Quote"
-      },
-      hygiene: {
-        title: "Environment Safety & Protection",
-        desc: "Leading the way in industrial hygiene, specialized chemical solutions, and expert pest management services since 1998.",
-        badge: "HADAKAH HYGIENE & PEST CONTROL",
-        audit: "Request a Hygiene Audit"
       }
     }
   },
@@ -113,8 +130,8 @@ export const translations = {
     hero: {
       badge: "إرث من التميز منذ عام 1998",
       title: "المعيار الذهبي في",
-      titleAccent: "الهندسة المؤسسية",
-      desc: "تقدم مؤسسة الخباز حلولاً هندسية متطورة، وتجارة صناعية استراتيجية، وحلول نظافة متخصصة في جميع أنحاء المملكة العربية السعودية.",
+      titleAccent: "التميز المؤسسي",
+      desc: "تقدم مؤسسة الخباز خدمات الدعاية المتطورة، والتجارة الصناعية الاستراتيجية، وحلول اللوحات والنشر المهنية في جميع أنحاء المملكة العربية السعودية.",
       explore: "استكشف الأقسام",
       start: "بدء استفسار",
       stat1: "أكثر من 25 عاماً من الخبرة",
@@ -122,23 +139,25 @@ export const translations = {
     },
     divisions: {
       tag: "وحدات أعمالنا",
-      title: "حلول متكاملة للصناعات المعقدة",
+      title: "حلول متكاملة للصناعات الحديثة",
       desc: "تعمل الخباز من خلال شركات تابعة متخصصة، كل منها رائد في مجاله، مما يضمن التركيز والتميز التشغيلي.",
-      eng: "استشاري هندسي",
-      engDesc: "استشارات متخصصة في الإدارة الهندسية، والتصميم المعماري، وتصور المشاريع ثلاثية الأبعاد، والإشراف على البناء.",
+      advertising: "هداقة للدعاية والإعلان",
+      advDesc: "تحضير مهني لجميع أنواع المواد الإعلانية عالية التأثير والمحتوى الترويجي.",
+      signs: "هداقة للوحات والخط العربي",
+      signsDesc: "تصميم وتحضير وتركيب لوحات المحلات التجارية ولوحات مشاريع البناء وأنظمة الإرشاد.",
+      publishing: "هداقة للنشر",
+      pubDesc: "تنسيق وطباعة ونشر المواد الأكاديمية والتجارية والترويجية بخبرة عالية.",
       trade: "هداقة للتجارة",
       tradeDesc: "المشتريات الاستراتيجية وتوريد المعدات الصناعية والمنتجات التجارية ومواد البناء عالية الجودة.",
-      hygiene: "هداقة للنظافة",
-      hygieneDesc: "مزود رائد لخدمات النظافة الصناعية ومكافحة الحشرات، وتتميز بمنتجات حصرية مثل Bloom-100 و Termiguard.",
       learnMore: "اقرأ المزيد"
     },
     about: {
       tag: "القيادة والرؤية",
       title: "إرث من الإدارة المهنية",
-      desc1: "تأسست مؤسسة الخباز تحت قيادة الدكتور أحمد أ. الخباز، وتمثل عقوداً من الخبرة في الإدارة الهندسية والعمليات التجارية الدولية.",
+      desc1: "تأسست مؤسسة الخباز تحت قيادة الدكتور أحمد أ. الخباز، وتمثل عقوداً من الخبرة في مختلف العمليات التجارية والإدارة الدولية.",
       desc2: "نحن ملتزمون بتقديم حلول عالية الجودة وموثوقة ومستدامة تمكن النمو الصناعي والمعايير المهنية في المملكة.",
       stat1Title: "رائد في الصناعة",
-      stat1Desc: "معترف بنا للتميز في الاستشارات.",
+      stat1Desc: "معترف بنا للتميز في قطاعات متنوعة.",
       stat2Title: "جذور سعودية",
       stat2Desc: "جذور عميقة في المنطقة الشرقية.",
       exp: "تأسست عام"
@@ -159,14 +178,15 @@ export const translations = {
       placeholderEmail: "email@company.com",
       placeholderMessage: "كيف يمكننا مساعدتك؟",
       options: [
-        "الاستشارات الهندسية",
+        "الدعاية والإعلان",
+        "اللوحات والخط العربي",
+        "النشر والطباعة",
         "التجارة والتوريدات",
-        "النظافة ومكافحة الحشرات",
         "استفسار عام"
       ]
     },
     footer: {
-      desc: "مجموعة شركات سعودية رائدة ملتزمة بالتميز الهندسي والموثوقية الصناعية منذ عام 1998.",
+      desc: "مجموعة شركات سعودية رائدة ملتزمة بالتميز والموثوقية الصناعية منذ عام 1998.",
       quickLinks: "روابط سريعة",
       services: "خدماتنا",
       headOffice: "المكتب الرئيسي",
@@ -177,17 +197,37 @@ export const translations = {
     },
     services: {
       back: "العودة إلى الأقسام",
-      engineering: {
-        title: "التميز الهندسي والمعماري",
-        desc: "استشارات هندسية متعددة التخصصات تقدم تصاميم معماریة مبتكرة وإدارة شاملة للمشاريع منذ عام 1998.",
-        badge: "خبراء الاستشارات الهندسية",
+      advertising: {
+        title: "الدعاية والإعلان الإبداعي",
+        desc: "تحويل الرؤى إلى واقع ملموس مع مواد إعلانية احترافية مصممة لجذب جمهورك.",
+        badge: "مؤسسة هداقة للدعاية والإعلان والترويج",
         capabilities: {
-          management: "الإدارة الهندسية",
-          architectural: "التصميم المعماري",
-          visualization: "التصور ثلاثي الأبعاد",
-          supervision: "الإشراف على المشاريع",
-          collaborative: "خدمات تعاونية",
-          projectMgmt: "إدارة المشاريع"
+          branding: "الهوية التجارية",
+          marketing: "المواد التسويقية",
+          digital: "الوسائط الرقمية",
+          promotional: "المواد الترويجية"
+        }
+      },
+      signs: {
+        title: "حلول اللوحات والخط العربي",
+        desc: "حلول لوحات متميزة من المفهوم إلى التركيب، مما يضمن تميز علامتك التجارية بوضوح ومتانة.",
+        badge: "مؤسسة هداقة للوحات والخط العربي",
+        capabilities: {
+          commercial: "لوحات المحلات التجارية",
+          construction: "لوحات مشاريع البناء",
+          wayfinding: "أنظمة الإرشاد",
+          calligraphy: "الخط العربي المحترف"
+        }
+      },
+      publishing: {
+        title: "النشر والطباعة الاحترافية",
+        desc: "خدمات نشر شاملة للمواد الأكاديمية والتجارية والترويجية مع التركيز على الدقة والجودة.",
+        badge: "هداقة للنشر",
+        capabilities: {
+          academic: "النشر الأكاديمي",
+          commercial: "الطباعة التجارية",
+          arrangement: "تنسيق المحتوى",
+          distribution: "خدمات التوزيع"
         }
       },
       trading: {
@@ -196,12 +236,6 @@ export const translations = {
         badge: "مؤسسة هداقة للتجارة",
         explore: "استكشف المخزون",
         quote: "طلب عرض سعر"
-      },
-      hygiene: {
-        title: "سلامة البيئة وحمايتها",
-        desc: "نحن نقود الطريق في النظافة الصناعية، والحلول الكيميائية المتخصصة، وخدمات إدارة الآفات الخبيرة منذ عام 1998.",
-        badge: "هداقة للنظافة ومكافحة الحشرات",
-        audit: "طلب تدقيق النظافة"
       }
     }
   }
