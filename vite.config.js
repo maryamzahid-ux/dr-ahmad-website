@@ -7,8 +7,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         trading: resolve(__dirname, 'trading-services.html'),
-        hygiene: resolve(__dirname, 'hygiene-services.html'),
-        engineering: resolve(__dirname, 'engineering-services.html'),
+        advertising: resolve(__dirname, 'advertising-services.html'),
+        signs: resolve(__dirname, 'signs-services.html'),
+        publishing: resolve(__dirname, 'publishing-services.html'),
       },
     },
   },
